@@ -1,0 +1,19 @@
+version: "3.3"
+
+services:
+
+  flatnotes:
+    image: dullage/flatnotes:latest
+    container_name: flatnotes    
+    environment:
+      PUID: 1000
+      GUID: 1000
+      FLATNOTES_AUTH_TYPE: 'password'
+      FLATNOTES_USERNAME: "User"
+      FLATNOTES_PASSWORD: "p4ssw0rd"
+      FLATNOTES_SECRET_KEY: "aLongRandomSeriesOfCharacters"
+    volumes:
+      - ./flatnotes/data:/data
+    ports:
+      - "8200:8080" 
+    restart: unless-stopped
