@@ -1,8 +1,6 @@
-# flatnotes
-Flatnotes - Notas - Docker compose
+# Flatnotes
 
-
-Ver en "localhost:8200"
+Ver en "http://localhost:8200"
 
 Usuario: User
 
